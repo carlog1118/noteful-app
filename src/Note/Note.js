@@ -26,7 +26,7 @@ import PropTypes from 'prop-types';
       .then(res => {
         if (!res.ok)
           return res.json().then(e => Promise.reject(e))
-        return res.json()
+        //return res.json()
       })
       .then(() => {
         this.context.deleteNote(noteId)
@@ -36,7 +36,7 @@ import PropTypes from 'prop-types';
         console.error({ error })
         
       })
-      setTimeout(() => window.location.reload(), 200)
+      //setTimeout(() => window.location.reload(), 200)
   }
 
   render() {
